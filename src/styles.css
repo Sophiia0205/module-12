@@ -1,0 +1,71 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/1e/be/88/1ebe8835f351626ed698a58f8ec2e669.jpg');
+  background-size: cover;
+}
+
+h1 {
+  padding-top: 150px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: blanchedalmond;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+}
+
+#search {
+  width: 500px;
+  padding: 20px;
+  font-size: 15px;
+}
+
+#search input {
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.flag {
+  width: 30%;
+  height: auto;
+}
+h2 {
+  font-size: 50px;
+  color: darkblue;
+  text-align: center;
+  text-transform: uppercase;
+}
+.info-list {
+  width: 45%;
+  font-size: 30px;
+  color: blanchedalmond;
+}
+.info-list ul {
+  padding: 0;
+  margin: 0;
+  color: blanchedalmond;
+}
