@@ -1,2 +1,5 @@
-<img src="{{flag}}" alt="{{name}}">
-<h3>{{name}}</h3>
+<ul class="countries_list">
+    {{#each this as |item|}}
+    <li class="countries-list__item">{{item.name}}</li>
+    {{/each}}
+</ul>

@@ -44,14 +44,21 @@ h1 {
   height: 50px;
   font-size: 20px;
 }
+.countries_list {
+  text-align: left;
+  width: 50%;
+  font-size: 30px;
+  color: blanchedalmond;
+}
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.flag {
+.country_flag {
   width: 30%;
   height: auto;
+  margin: 0 auto;
 }
 h2 {
   font-size: 50px;
@@ -59,13 +66,15 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 }
-.info-list {
-  width: 45%;
+.country_wrapper {
+  text-align: center;
+  width: 100%;
   font-size: 30px;
   color: blanchedalmond;
 }
-.info-list ul {
+.country_wrapper ul {
   padding: 0;
   margin: 0;
   color: blanchedalmond;
+  list-style: ;
 }

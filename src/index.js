@@ -6,19 +6,20 @@ import debounce from 'lodash.debounce';
 import countryList from './template/country.hbs';
 import country from './template/c-item.hbs';
 
-let text = document.querySelector ('.input_text');
+let inputText = document.querySelector ('.input_text');
+let inputForm = document.querySelector ('.inputForm');
 
-window.addEventListener ('keypress', e => {
-  if (e.keyCode == 13) {
-    e.preventDefault ();
+inputForm.addEventListener ('keypress', event => {
+  if (event.keyCode === 13) {
+    event.preventDefault ();
   }
 });
 
 let search = async () => {
-  if (text.value === '') {
+  if (inputText.value === '') {
     return;
   }
-  let result = await fetchCountries (text.value);
+  let result = await fetchCountries (inputText.value);
   document.querySelector ('.js-result').innerHTML = '';
   if (!result) {
     showError ('No Countries Found');
@@ -40,4 +41,4 @@ const showError = text => {
   });
 };
 
-text.addEventListener ('input', debounce (search, 500));
+inputText.addEventListener ('input', debounce (search, 500));
